@@ -1,6 +1,6 @@
 {
-  "name": "karma-ie-launcher",
-  "version": "1.0.0",
+  "name": "@aleen42/karma-ie-launcher",
+  "version": "1.0.2",
   "description": "A Karma plugin. Launcher for Internet Explorer.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-ie-launcher.git"
+    "url": "git://github.com/aleen42/karma-ie-launcher.git"
   },
   "keywords": [
     "karma-plugin",
