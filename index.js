@@ -109,7 +109,9 @@ function IEBrowser (baseBrowserDecorator, logger, args) {
     delete urlObj.search
     url = urlformat(urlObj)
 
-    return flags.concat(url)
+    // avoid auto redirect to Chromium Edge with opening `iexplore.exe "url&" -embedding`,
+    // which will open old IE with `url&%20-embedding`
+    return flags.concat(url + '&').concat('-embedding')
   }
 
   var baseOnProcessExit = this._onProcessExit
